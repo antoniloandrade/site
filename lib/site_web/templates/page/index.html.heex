@@ -1,41 +1,1097 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace of mind from prototype to production</p>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <!-- Search Engine -->
+  <meta name="description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+  <meta name="image" content="">
+  <meta name="name" content="Habitação | HAF Engenharia">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Habitação | HAF Engenharia">
+  <meta itemprop="description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+  <meta itemprop="image" content="">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Habitação | HAF Engenharia">
+  <meta name="og:description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.6/CHANGELOG.md">v1.6 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://web.libera.chat/#elixir">#elixir on Libera Chat (IRC)</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-      <li>
-        <a href="https://discord.gg/elixir">Elixir on Discord</a>
-      </li>
-    </ul>
-  </article>
-</section>
+  <meta name="og:url" content="https://habitacao.hafeng.com.br">
+  <meta name="og:site_name" content="Habitação | HAF Engenharia">
+  <meta name="og:locale" content="pt_BR">
+  <meta name="og:type" content="website">
+
+  <meta name="og:image" content="">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="200" />
+  <meta property="og:image:height" content="200" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://habitacao.hafeng.com.br">
+  <meta property="twitter:title" content="Habitação | HAF Engenharia">
+  <meta property="twitter:description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+  <meta property="twitter:image" content="">
+
+  <link rel="icon" type="image/webp" href="https://api./assets/hafeng/library/images/logo-1-original.webp" />
+  <link rel="stylesheet" href="/css/bulma.min.css"/>
+
+  <title>HAF Engenharia</title>
+
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+<style>
+
+html{
+  scroll-behavior: smooth;
+}
+.google-button {
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  padding: 5px;
+  display: block;
+}
+.google-button:focus, .google-button:hover {
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
+}
+.google-button:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  -webkit-transition-duration: 10ms;
+          transition-duration: 10ms;
+}
+
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.google-button__icon--plus {
+  width: 27px;
+}
+
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto", arial, sans-serif;
+}
+
+
+.facebook-button {
+  height: 40px;
+  border-width: 0;
+  background: #3b5999;
+  color: #fff;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  padding: 5px;
+  display: block;
+}
+.facebook-button:focus, .facebook-button:hover {
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  background-color: #5274bc;
+}
+.facebook-button:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  -webkit-transition-duration: 10ms;
+          transition-duration: 10ms;
+}
+
+.facebook-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.facebook-button__icon--plus {
+  width: 27px;
+}
+
+.facebook-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto", arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+
+
+
+button ~ button {
+  margin-left: 20px;
+}
+
+
+</style>
+
+  <style>
+    body {
+      height: 100%;
+      display: none;
+    }
+  </style>
+<meta charset="UTF-8" content="LQIrEg0FLh8gPS0kAno6DTF7OgYtOxUTNJEWiAcZqLLAoLPLZHtEoZ-r" csrf-param="_csrf_token" method-param="_method" name="csrf-token">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JK0NXFS7RB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JK0NXFS7RB');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WCG3PF2');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.h2sistemas.com.br/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '225297752866639');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=225297752866639&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<meta name="facebook-domain-verification" content="nxks4o8z2j88h3qv3o6avgbzuhg5u4" />
+ <script>
+  window.AUTHED = "false";
+  window.TOKEN = "";
+  window.INTERNAL = "hafeng";
+  window.GRUUID = "";
+  window.GR3CLIENT = "";
+  window.GR2CLIENT = "";
+  </script>
+  <script src="/js/phoenix.min.js"></script>
+  <script src="/js/phoenix_live_view.js"></script>
+</head>
+<body >
+
+<div id="ipzn"></div><section id="iqkt" class="menu-main small"><div id="izu8i" class="container container-top"><div id="ihihf" class="columns"><div id="i3eff" class="column"><img src="https://api.h2sistemas.com.br//assets/hafeng/library/images/logo-1-original.webp" id="iz7f" class="logo-img"/><div id="i1l7i"><a id="i2p3t" href="https://www.facebook.com/hafengenharia/" target="_blank" class="link-top"><i class="fab fa-facebook"></i></a><a id="i0fdx" target="_blank" href="https://www.instagram.com/haf_engenharia/" class="link-top"><i class="fab fa-instagram"></i></a><a target="_blank" href="https://br.pinterest.com/haf_engenharia/" id="i1aae" class="link-top"><i class="fab fa-pinterest"></i></a></div></div></div></div><div id="im24" class="container container-menu"><div id="i84a" class="columns"><div id="iqnn" class="column"><nav role="navigation" aria-label="main navigation" id="itlk" class="navbar"><div id="im9i" class="navbar-brand"><a role="button" aria-label="menu" aria-expanded="false" class="navbar-burger burger"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true" id="i1qcg"></span></a></div><div id="i74qi" class="navbar-menu"><div id="iar09"><a id="ivolo" href="/" class="navbar-item">Home</a><a id="i9tve" href="/#sobre-nos" class="navbar-item">Sobre Nós</a><a href="/#portifolio" id="ip4u6" class="navbar-item">Portifólio</a><a href="https://api.whatsapp.com/send?phone=5511948651538&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" id="inuhi" class="navbar-item">Orçamento</a><a href="/#footer" id="iiltk" class="navbar-item">Contato</a><div class="navbar-item has-dropdown is-hoverable"></div></div><a href="https://hafeng.com.br/portalclientes/" id="is3rf" class="navbar-item">Portal do Cliente</a></div></nav></div></div></div></section><div id="igyu3"><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" id="iifwd" class="wpp"><i id="ilbcs" class="fab fa-whatsapp"></i></a></div><div id="i1o7" class="slides splide"><div class="splide__track"><ul class="splide__list"><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/01-original.webp)"><div class="container"><div class="columns" style="display: flex; justify-content: center"><div class="column" style="max-width: 800px"><div style="height: 60px"></div><div><small>Para você ou sua empresa</small></div><h3 class="slide-title"> PROJETOS
+              </h3><div style="color: #FFF">
+                Desenvolvimento, Acompanhamento e Execução
+              </div><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="button btn-cta">Saiba Mais</a></div></div></div></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/06-original.webp)"><div class="container"><div class="columns" style="display: flex; justify-content: center"><div class="column" style="max-width: 800px"><div style="height: 60px"></div><div><small>Realizamos seu projeto</small></div><h3 class="slide-title"> REFORMAS
+              </h3><div style="color:#FFF">
+                As melhores opções em decoração, reformas, iluminação e acabamento.
+                <br/>
+                Temos uma equipe especializada e focada para realizar seu sonho!
+              </div><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="button btn-cta">Saiba Mais</a></div></div></div></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/02-original.webp)"><div class="container"><div class="columns" style="display: flex; justify-content: center"><div class="column" style="max-width: 800px"><div style="height: 60px"></div><div><small>Planejamento e Execução</small></div><h3 class="slide-title"> CONSTRUÇÃO
+              </h3><div><small>Obras Residenciais e Comerciais</small></div><h3 class="slide-title"> CRÉDITO IMOBILIÁRIO
+              </h3><div style="color: #FFF; margin-bottom: 25px;">
+                Financiamento de sua casa através da Caixa Econômica Federal
+              </div><h3 class="slide-title"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/caixa-logo-200-original.webp" style="height: 30px;margin-top: 15px;"/></h3><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="button btn-cta">Saiba Mais</a></div></div></div></div></li></ul></div></div><div id="ia3d72"><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCG3PF2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --></div><section id="sobre-nos"><div id="ib2p5" class="container"><div id="i770so" class="columns"><div id="iipzdx" class="column is-4"><div id="icrwin"></div><div id="io7n9">EMPRESA</div></div><div id="i5pzsu" class="column"><div id="iklodi" class="content-text"><p>Fundada com a missão de diversificar as atividades, a HAF Engenharia  lança-se ao mercado atuando nas áreas, projetos personalizados, aprovações de crédito para construção, financiamento da construção. <br/><br/>Uma empresa que vem crescendo a cada dia pela busca constante de qualidade e excelência no atendimento ao cliente. Oferecendo uma gama de serviços com diferencial, atendendo os nichos de mercado nos segmento de obras de medio e grande porte, empresas publicas e privadas e sistemas industriais.<br/><br/>Atuando no Estado de São Paulo.</p></div></div></div></div></section><section id="ic5o6"><div id="i4u4k" class="container"><div id="ixqub" class="columns"><div id="i1bbt" class="column"><div id="ihce69" class="title-page">CONHEÇA NOSSOS DIFERENCIAIS</div></div></div></div><div id="is9qv" class="fetaures"><div class="fbox"><div class="fbox-container"><div class="fbox-side1"><div class="s"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/icon1-original.webp" style="height: 120px"/><h3>PROJETOS PERSONALIZADOS E APROVAÇÕES
+        </h3></div><p class="description">
+        Projetos de acordo com suas necessidades, aprovação de projeto na prefeitura, alvarás para construção, averbação e habite-se.
+      </p></div></div></div><div class="fbox"><div class="fbox-container"><div class="fbox-side1"><div class="s"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/icon6-original.webp" style="height: 120px"/><h3>APROVAÇÃO DE CRÉDITO PARA CONSTRUÇÃO
+        </h3></div><p class="description">
+        Suporte de especialistas em análise e aprovação de crédito e possibilidade de utilização do FGTS para o financiamento da construção.
+      </p></div></div></div><div class="fbox"><div class="fbox-container"><div class="fbox-side1"><div class="s"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/icon7-original.webp" style="height: 120px"/><h3>CONSTRUÇÃO FINANCIADA
+        </h3></div><p class="description">
+        Processo de contratação do
+financiamento diretamente pela HAF e o financiamento só começa a ser pago após a entrega do imóvel.
+      </p></div></div></div><div class="fbox"><div class="fbox-container"><div class="fbox-side1"><div class="s"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/icon4-original.webp" style="height: 120px"/><h3>FUNCIONALIDADE, BEM ESTAR E ECONOMIA
+
+        </h3></div><p class="description">
+        Otimização e gerenciamento do processo com equipe especializada, seguindo as normas de segurança e qualidade.
+      </p></div></div></div><div class="fbox"><div class="fbox-container"><div class="fbox-side1"><div class="s"><img src="https://api.h2sistemas.com.br/assets/hafeng/library/images/icon5-original.webp" style="height: 120px"/><h3>ACOMPANHAMENTO DA OBRA
+        </h3></div><p class="description">
+        Gerenciamento e acompanhamento profissional, garantindo que a obra seguirá o planejamento.
+      </p></div></div></div></div></section><section id="i7wjg"><div id="ipr1p" class="container"><div id="iyo5i" class="columns"><div id="iz9hk" class="column"><div id="ifxjl">Serviço rápido e confiável<br/>​​​​​​​para sua construção ou reforma</div><a id="iwd41" href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" class="btn btn-primary">Faça um orçamento agora</a></div></div></div></section><section id="i4z2"><div id="ig2w" class="container"><div id="inuy" class="columns"><div id="ik03" class="column"><div id="iff1n" class="columns"><div id="ijeck" class="column"><div id="ilrwh"></div><div id="i1x6o">Construção Financiada</div><div id="imvk8"></div><div id="iai7p">• Auxílio na escolha do terreno<br/>• Projeto personalizado<br/>• Assessoria na construção do imóvel<br/>• Compra de materiais<br/>• Gerenciamento e contratação de mão de obra</div></div><div id="ivf4rg" class="column"><div id="itrt3h"></div><div id="inovbg">Reforma Civil</div><div id="iuaaot"></div><div id="iypsek">• Arquitetura de Interiores<br/>• Projeto de móveis planejados<br/>• Planejamento e Orçamento<br/>• Gerenciamento de serviços <em>(Demolição, instalação de revestimentos, hidráulica, elétrica, gesso, pintura, marmoraria e vidraçaria)</em><br/>• Prazo e Qualidade</div></div><div id="indki5" class="column"><div id="ie01w6"></div><div id="immz2k">Obras e Manutenção de Condomínios</div><div id="i18iem"></div><div id="ijlyvc">• Obras e retrofit<br/>• Pintura predial<br/>• Revitalização de fachadas<br/>• Impermeabilização de laje<br/>• Laudos Técnicos e Projetos<br/>• Acompanhamento de Engenharia<br/></div></div></div><div id="it299"><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" id="iks5w" class="btn btn-primary">Faça um orçamento agora</a></div></div></div></div></section><section id="portifolio"><div id="il3q7" class="container"><div id="iqtho" class="columns"><div id="im3la" class="column"><div id="ipvvar">CONHEÇA NOSSOS PROJETOS</div></div></div></div><div id="ivrpu" class="container"><div id="i9hrf" class="columns"><div id="ih7k8" class="column"><div id="i9bnqk" class="splide sld2"><div class="splide__track"><ul class="splide__list"><li class="splide__slide"><div class="home-slide"><div class="im" style="height: 250px; background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/gourmet-original.webp);"><div class="cont-im"><h4>Área Gourmet
+            </h4><h5>Residencial, Interiores
+            </h5></div></div></div></li><li class="splide__slide"><div class="home-slide"><div class="im" style="height: 250px; background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/cozinha-original.webp);"><div class="cont-im"><h4>Cozinha
+            </h4><h5>Residencial, Interiores
+            </h5></div></div></div></li><li class="splide__slide"><div class="home-slide"><div class="im" style="height: 250px; background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/lavanderia-original.webp);"><div class="cont-im"><h4>Lavanderia
+            </h4><h5>Residencial, Interiores
+            </h5></div></div></div></li><li class="splide__slide"><div class="home-slide"><div class="im" style="height: 250px; background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/dormitorio-interno-original.webp);"><div class="cont-im"><h4>Dormitório Interno
+            </h4><h5>Residencial, Interiores
+            </h5></div></div></div></li><li class="splide__slide"><div class="home-slide"><div class="im" style="height: 250px; background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/quarto-casal-original.webp);"><div class="cont-im"><h4>Quarto de Casal
+            </h4><h5>Residencial, Interiores
+            </h5></div></div></div></li></ul></div></div></div></div></div></section><section id="servicos"><div id="ina36" class="container"><div id="iiov5" class="columns"><div id="is4nd" class="column"><div id="ie00f"><div id="irg7i" op="consultoria" class="b-link c1_consultoria">CONSULTORIA</div><div id="ip0il" op="projetos" class="b-link c1_projetos">PROJETOS</div><div id="irg7i1" op="planejamento" class="b-link c1_planejamento">PLANEJAMENTO</div><div id="irg7i2" op="gestao_de_obra" class="b-link c1_gestao_de_obra">GESTÃO DE OBRA</div></div><div id="ijkt2" class="conteudo"><div id="i4gp7n" class="content-cons c_consultoria"><div id="i142g">CONSULTORIA</div><div id="i82zh">• Análise técnica<br/>• Análise Orçamentária<br/>• Projeto Executivo<br/>• Documentação e aprovação junto a órgãos oficiais<br/>• Pré análise técnica de loteamento</div><div id="il7n6">Conversa com arquitetos e engenheiros especialistas em construções residenciais sobre suas necessidades com os  recursos disponíveis</div></div><div id="ixgj1a" class="content-cons c_projetos"><div id="iglvlv">PROJETOS</div><div id="ia86tj">• Projeto Arquitetônico<br/>• Projeto Executivo<br/>• Projeto Estrutural<br/>• Projeto de instalações Hidráulicas e Elétricas<br/>• Experiência 3D<br/>• Revisões</div><div id="ik1j8s">Desde aprovação em condomínio, cronograma de obra, compatibilização e execução de projeto executivo.</div></div><div id="iup7dg" class="content-cons c_planejamento"><div id="izssus">PLANEJAMENTO</div><div id="ivkqxg">• Estudo de Viabilidade Financeira<br/>• Orçamentos Executivos<br/>• Cronograma Físico-Financeiro<br/>• Planejamento de Obras</div><div id="inoqx7">Estudo prévio para garantir o controle e segurança de que o capital<br/>disponível será suficiente para finalizar a obra de acordo com o projeto.</div></div><div id="ixc63c" class="content-cons c_gestao_de_obra"><div id="iy4d8d">GESTÃO DE OBRA</div><div id="i35pi6">• Contratação e gestão de mão de obra<br/>• Coordenação e supervisão das etapas da obra<br/>• Compra de materiais<br/>• Gerenciar cumprimento do cronograma da obra<br/>• Monitoramento e controle de prazos e qualidade<br/>• Encerramento da obra</div><div id="ibny0e">Administração completa da obra, desde o início até à entrega das chaves. Gerenciamento de todos os processos da obra, compra de materiais e de todas as equipes envolvidas.</div></div></div></div><div id="iecem" class="column is-4"><img src="https://api.h2sistemas.com.br//assets/hafeng/library/images/caixa-logo-200-original.webp" id="ibm65"/><div id="ib5i8"><strong>Financiamento e Aquisição de Terreno e Construção</strong></div><div id="ixc74">Oferecemos agenciadores especializados em análise e aprovação de crédito imobiliário para fazer o financiamento junto a Caixa com rapidez, eficiência e sigilo para nossos clientes.</div><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" id="i91lg" class="btn btn-primary">Consulte-nos</a></div></div></div></section><section id="ixtw9"><div class="container"><div class="columns"><div id="ie2w5" class="column"><div id="ien64">PROJETO, PLANEJAMENTO E EXECUÇÃO</div><div id="i5eub">Acompanhamento e suporte do começo ao final da obra</div></div></div></div><div id="i8lqq"><a href="https://api.whatsapp.com/send?phone=551131361858&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" id="iafco" class="btn btn-primary">Faça um orçamento agora</a></div></section><section id="iz8tc"><div class="container"><div class="columns"><div class="column"><div id="i1o8c">Pessoas falando de nós</div><div id="ic648"><div id="ifrr8"></div></div><div id="im37w" class="depos"><div class="cont"><div class="sz1">
+    &quot;
+  </div><div class="sz2"><img src="https://demo1.wpopal.com/workspace/wp-content/uploads/2016/11/avata1.png"/><div><div class="name"> John Smith
+      </div><div class="function">Founder Of Newcomer
+      </div></div></div><div class="sz3">
+    WorkSpace is a community where everyone is welcome. It’s where ideas happen. It’s where people from all backgrounds come to work together.
+  </div></div><div class="cont"><div class="sz1">
+    &quot;
+  </div><div class="sz2"><img src="https://demo1.wpopal.com/workspace/wp-content/uploads/2016/11/avata1.png"/><div><div class="name"> John Smith
+      </div><div class="function">Founder Of Newcomer
+      </div></div></div><div class="sz3">
+    WorkSpace is a community where everyone is welcome. It’s where ideas happen. It’s where people from all backgrounds come to work together.
+  </div></div><div class="cont"><div class="sz1">
+    &quot;
+  </div><div class="sz2"><img src="https://demo1.wpopal.com/workspace/wp-content/uploads/2016/11/avata1.png"/><div><div class="name"> John Smith
+      </div><div class="function">Founder Of Newcomer
+      </div></div></div><div class="sz3">
+    WorkSpace is a community where everyone is welcome. It’s where ideas happen. It’s where people from all backgrounds come to work together.
+  </div></div></div></div></div></div></section><section id="planos"><div id="iwt5e">Nossos Parceiros</div><div id="idc8p">A união entre parceiros torna os sonhos possíveis!</div><div id="iil1i" class="container"><div id="iqqh3" class="columns"><div id="i8aj4" class="column"><div id="ivjrst" class="sld1 splide"><div class="splide__track"><ul class="splide__list"><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/prd-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/petrobras-original.gif);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/mendes-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/euro-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/equipav-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/entrevias-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/conduto-original.webp);"></div></li><li class="splide__slide"><div class="home-slide" style="background-image: url(https://api.h2sistemas.com.br/assets/hafeng/library/images/baptissta-original.webp);"></div></li></ul></div></div></div></div></div></section><section id="galeria"><div id="ips93" class="container"><div id="ievy6" class="columns"></div></div></section><section id="idvg"><div id="i9lp" class="columns"><div id="i39o" class="column"><iframe frameborder="0" id="i11x" src="https://maps.google.com/maps?&amp;q=São paulo&amp;z=16&amp;t=q&amp;output=embed"></iframe></div><div id="ixdm" class="column"><div id="i3qtu">Onde estamos</div><div id="i1nyg"><div id="ifg8f"><i id="igv1f" class="fas fa-map-marker-alt"></i></div><div id="iey4e"><div id="ixv1m">Endereço</div><div id="ixk7s">Aliquam eleifend dictum semper. Suspendisse ac lacinia lorem, nec lacinia</div></div></div><div id="ioy1k"><div id="i4hmt"><i id="ilnuz" class="fas fa-business-time"></i></div><div id="iwpz5"><div id="iqlnq">Horário de Funcionamento</div><div id="ik81k">Segunda a sexta das 8:00h às 18:00h<br/>Sabado das 8:00 às 12:00<br/>Domingo - Fechado</div></div></div><div id="itj5u"><div id="ij61e"><i id="ic0js" class="fas fa-phone"></i></div><div id="i1ht6"><div id="is7jo">Telefone</div><div id="iqcgg">(XX) XXXXXXXXXX</div></div></div><div id="if8tf"><div id="ijzzo"><i id="ipnig" class="fas fa-envelope"></i></div><div id="il7yi"><div id="ikd82">E-mail</div><div id="in9i3">contao@contato.com.br</div></div></div></div></div></section><section id="footer"><div id="i7rd" class="container"><div id="ifbuv" class="columns"></div><div id="ixhnd" class="columns"><div id="ilk2z" class="column"><div id="i4xul"><img src="https://api.h2sistemas.com.br//assets/hafeng/library/images/logo-1-original.webp" id="iptix"/></div></div><div id="ici3c" class="column"><div id="isypn">CONSTRUÇÃO E REFORMAS</div><a href="/#sobre-nos" id="ijjjl" class="footer-link">Acompanhamento Técnico de Engenheiro credenciado</a><a href="/#sobre-nos" id="irqdy" class="footer-link">Construção residencial e comercial</a><a href="/#sobre-nos" id="iagrg" class="footer-link">Telhados – construção / reformas</a><a href="/#sobre-nos" id="imc3t" class="footer-link">Piscinas / Decks / Áreas de Lazer</a><a href="/#sobre-nos" id="iampi" class="footer-link">Projetos / 3 D</a><a href="/#sobre-nos" id="ithuk" class="footer-link">Arquitetura de Interiores</a><a href="/#sobre-nos" id="iywdq" class="footer-link">Móveis planejados e muito mais.</a></div><div id="iorry" class="column"><div id="ide0w">FAÇA SEU ORÇAMENTO CONOSCO</div><a href="/#sobre-nos" id="i5pxo" class="footer-link">Orçamento</a><a href="/#sobre-nos" id="i5apf" class="footer-link">Portfólio</a><div id="ie09z">FINANCIE SEU IMÓVEL</div><img src="https://api.h2sistemas.com.br//assets/hafeng/library/images/caixa-logo-200-original.webp" id="i07s6"/></div><div id="it3a1" class="column"><div id="ic7sc">FALE CONOSCO</div><a id="i1jz2" href="" class="footer-link">E-mail: contato@hafeng.com.br</a><a href="" id="iu0tj" class="footer-link">Tel.: +55 11 3136 1858</a><div id="irit4">Estamos em: SÃO PAULO - SP</div><div id="i3wz4">SIGA-NOS</div><div id="in92r"><div id="i0udw" class="vx-footer"><div id="iov4f" class="icon"><i id="iv5hf" class="fab fa-facebook-f"></i></div><div id="i7kpk">/hafengenharia</div></div><div id="i9sxf" class="vx-footer"><div id="i457u" class="icon"><i id="i7wnx" class="fab fa-instagram"></i></div><div id="iukgu">/haf_engenharia</div></div><div id="i41mj" class="vx-footer"><div id="ipnaj" class="icon"><i id="ib7xx" class="fab fa-pinterest"></i></div><div id="ixfum">/haf_engenharia</div></div><div id="iaz8u" class="vx-footer"><div id="i2cy6" class="icon"><i id="idmzm" class="fab fa-whatsapp"></i></div><div id="iu1zf">+55 (11) 3136 1858</div></div></div></div></div></div></section><section id="iw9v6"><div id="imssb" class="container"><div id="izs8h" class="columns"><div id="irhlf" class="column"><div id="imbla">© 2021 Todos os direitos reservados a HAF Engenharia</div><div id="imvfv">Site desenvolvido por MR Marketing Digital em parceria com H2s Digital</div></div></div></div></section>
+
+  <style id='st-page-style'> * { box-sizing: border-box; } body {margin: 0;}body{background-repeat:normal;}#iz7f{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-position-x:0%;background-position-y:0%;background-repeat:normal;margin:-9px 0 0 0;}#iqkt{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:46;background-repeat:normal;background-position-x:0%;background-position-y:0%;position:fixed;width:100vw;z-index:500;transition:all 0.5s ease;top:0;}#i74qi{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;justify-content:center;display:flex;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#itlk{background-blend-mode:18;backgroundColor:transparent;background-image:linear-gradient(90deg,rgba() 0%,rgba() 0%);flex-direction:row-reverse;display:block;}#iqnn{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i9tve{backgroundColor:rgb(250, 250, 250);}#ivolo{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#iar09{backgroundColor:rgba(0, 0, 0, 0);justify-content:center;display:flex;}#im9i{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;display:none;}body{background-repeat:normal;}#ip4u6{backgroundColor:rgba(0, 0, 0, 0);}#inuhi{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#iiltk{backgroundColor:rgba(0, 0, 0, 0);}#i1l7i{min-height:5px;height:38px;display:flex;flex-direction:row;width:151.5px;position:absolute;right:1px;margin:-18px 0 0 0;z-index:6000;backgroundColor:rgba(0, 0, 0, 0);}#i2p3t{color:#ffffff;backgroundColor:rgb(255, 255, 255);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i0fdx{color:#ffffff;backgroundColor:rgb(255, 255, 255);background-blend-mode:100;background-position-x:0%;background-position-y:0%;background-repeat:normal;}#i3eff{padding:20px 12px 5px 12px;display:flex;backgroundColor:rgba(0, 0, 0, 0);margin:0 0 0 0;justify-content:flex-start;align-items:center;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i1qcg{backgroundColor:rgb(74, 74, 74);}#izu8i{position:relative;}body{background-repeat:normal;}#i1aae{color:#ffffff;backgroundColor:rgb(255, 255, 255);background-blend-mode:100;background-position-x:0%;background-position-y:0%;background-repeat:normal;}#is3rf{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;display:block;}#igyu3{backgroundColor:rgba(0, 0, 0, 0);position:static;}@media (max-width: 768px){#i74qi{display:none;}#iqkt{backgroundColor:rgb(255, 255, 255);}#izu8i{backgroundColor:rgba(0, 0, 0, 0);}#iz7f{margin:-11px 0 0 26px;}#iz7f{height:65px;margin:-14px 0 0 26px;}}@media (max-width: 480px){#iqnn{display:none;}#izu8i{background-image:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%);margin:-1px 0 0 0;padding:26px 0 15px 0;}#iz7f{margin:-19px 0 0 26px;}#iz7f{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;margin:6px 0 0 26px;max-width:100%;height:56px;}}/**---CUSTOM-STYLE--**//*[[navbar-item]]*/.navbar-item{
+  background: transparent;
+  color: #640f0f99;
+  !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+.navbar-item:hover, .navbar-item:focus, .navbar-item:active{
+  border-bottom: 2px solid #640f0f;
+  border-top: 2px solid #640f0f;
+  color: #640f0f!important;
+  background: transparent!important;
+}
+/*[split]*//*[[navbar-menu]]*/.navbar-menu{
+  background: transparent!important;
+}
+/*[split]*//*[[navbar-dropdown]]*/.navbar-dropdown{
+  background: transparent;
+  color: #EEE!important;
+}
+.navbar-dropdown:hover{
+  background: transparent!important;
+  color: #FFF;
+  text-decoration: underline
+}
+.navbar-dropdown .navbar-item{
+  background: #1B2131;
+  color: #EEE!important;
+}
+.navbar-dropdown .navbar-item:hover{
+  background: #1B2131!important;
+  color: #FFF;
+  text-decoration: underline
+}
+/*[split]*//*[[navbar-link]]*/.navbar-link{
+  background: transparent;
+  color: #EEE!important;
+}
+.navbar-link:hover{
+  background: transparent!important;
+  color: #FFF;
+  text-decoration: underline
+}
+/*[split]*//*[[navbar]]*/.navbar{
+  background-color: transparent;
+}
+/*[split]*//*[[logo-img]]*/.logo-img{
+  /*filter: contrast(0) brightness(100);*/
+}
+/*[split]*//*[[link-top]]*/.link-top{
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-left: 5px;
+  color: #640f0f;
+  border-radius: 2px;
+  border: 2px solid #640f0f;
+}
+.link-top i{
+  color: #640f0f;
+}
+.link-top:hover, .link-top:focus, .link-top:active{
+  opacity: 0.8;
+}
+/*[split]*//*[[bg]]*/.bg{
+  background: #000;
+}
+/*[split]*//*[[menu-main]]*/.menu-main{
+  background: rgb(255,255,255,0.7);
+  background: linear-gradient(180deg, rgba(255,255,255,0.7) 52%, rgba(255,255,255,0) 100%);
+  transition: 0.5s all;
+}
+.menu-main.small{
+  background: #FFFFFFFF!important;
+}
+.menu-main.small .logo-img{
+  position: absolute;
+  left: 0px!important;
+  top: -2px;
+  height: 65px;
+  width: auto;
+}
+.menu-main.small .container-top{
+  margin-top: 22px;
+  border-color: transparent;
+}
+.menu-main.small .container-menu{
+  margin-top: -56px;
+}
+/*[split]*//*[[container-top]]*/.container-top{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #FFFFFF88;
+}
+/*[split]*//*[[wpp]]*/.wpp{
+  cursor: pointer;
+  box-shadow: 0px 0px 15px #00000055;
+  border-radius: 100px;
+  transition: all 0.5s;
+  min-height: 5px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  color: #ffffff;
+  line-height: -28px;
+  background-color: rgb(77, 194, 71);
+  background-blend-mode: 100;
+  background-repeat: normal;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  z-index: 5000;
+}
+.wpp:hover{
+  box-shadow: 0px 0px 15px #00000077;
+}
+/*[split]*//*[[f]]*/.f{
+  background: #000;
+}
+* { box-sizing: border-box; } body {margin: 0;}#i1o7{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;margin:67px 0 0 0;}@media (max-width: 480px){#i1o7{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}}/**---CUSTOM-STYLE--**//*[[slides]]*/.slides{
+  min-height: 100vh;
+  height: 100vh;
+}
+.slides .home-slide{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.slides .home-slide .container{
+  height: 100%;
+}
+.slides .home-slide .container .columns{
+  height: 100%;
+}
+.slides .home-slide .column{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slides .btn-cta{
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.slides h3{
+  margin-top: -20px;
+  font-size: 2.5em;
+  color: #FFF;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: left;
+}
+.slides div small{
+  text-align: left;
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: block;
+}
+@media screen and (max-width: 768px){
+  .splide__arrows{
+    display: none
+  }
+  .slides .home-slide .column{
+    padding: 12px 20px;
+  }
+  .slides h3{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  .slides h4{
+    font-size: 1.2em;
+  }
+}
+* { box-sizing: border-box; } body {margin: 0;}#i39o{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;padding:0 0 0 0;}#ixdm{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;display:flex;flex-direction:column;align-items:flex-start;padding:30px 12px 25px 30px;max-width:33%;background-image:linear-gradient(90deg,rgba(185,40,40,1) 0%,rgba(185,40,40,1) 0%);}#i11x{height:100%;width:100%;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#footer{padding:0 0 0 0;backgroundColor:rgba(0, 0, 0, 0);border-color:#4a4a4a;background-image:linear-gradient(90deg,rgba(208,208,208,1) 0%,rgba(208,208,208,1) 0%);background-blend-mode:100;background-position-x:0%;background-position-y:0%;}#iptix{height:80px;margin:-65px 0 0 0;}#ixk7s{padding:10px;font-size:15px;font-weight:400;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;color:#ffffff;}#isypn{padding:10px 10px 10px 0;font-size:16px;font-weight:700;color:#000000;}#i3qtu{padding:10px;font-size:30px;font-weight:700;color:#FFF;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i7kpk{padding:0 0 0 10px;font-size:13px;font-weight:400;backgroundColor:rgba(0, 0, 0, 0);color:#4a4a4a;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i0udw{min-height:5px;backgroundColor:rgba(0, 0, 0, 0);}#ici3c{backgroundColor:rgba(0, 0, 0, 0);}#irhlf{display:flex;justify-content:space-between;}#iw9v6{backgroundColor:#181717;background-image:linear-gradient(90deg,rgba(28,27,27,1) 0%,rgba(28,27,27,1) 0%);}#imbla{padding:0 0 0 0;font-size:12px;color:#c4c1c1;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#imvfv{padding:0 0 0 0;font-size:12px;color:#c4c1c1;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ixv1m{padding:10px 10px 0 10px;font-size:15px;font-weight:700;color:#ffffff;}#i1nyg{min-height:5px;display:flex;color:#FFF;}#ifg8f{min-height:5px;height:44px;display:flex;justify-content:center;align-items:center;width:47px;color:#000000;}#iey4e{min-height:5px;}#if8tf{min-height:5px;display:flex;}#iov4f{min-height:5px;height:25px;display:flex;justify-content:center;align-items:center;width:25px;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(100,15,15,1) 0%,rgba(100,15,15,1) 0%);padding:4px 4px 4px 4px;}#il7yi{min-height:5px;}#ikd82{padding:10px 10px 0 10px;font-size:15px;font-weight:700;color:#ffffff;}#in9i3{padding:10px;font-size:15px;font-weight:400;color:#ffffff;}#iv5hf{backgroundColor:rgb(0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ioy1k{min-height:5px;display:flex;}#i4hmt{min-height:5px;height:44px;display:flex;justify-content:center;align-items:center;width:47px;color:#000000;}#iwpz5{min-height:5px;}#iqlnq{padding:10px 10px 0 10px;font-size:15px;font-weight:700;color:#ffffff;}#ik81k{padding:10px;font-size:15px;font-weight:400;color:#ffffff;}#ijzzo{min-height:5px;height:44px;display:flex;justify-content:center;align-items:center;width:47px;color:#000000;}#i9sxf{min-height:5px;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i457u{min-height:5px;height:25px;display:flex;justify-content:center;align-items:center;width:25px;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(100,15,15,1) 0%,rgba(100,15,15,1) 0%);}#i7wnx{backgroundColor:rgb(0, 0, 0);}#iukgu{padding:0 0 0 10px;font-size:13px;font-weight:400;backgroundColor:rgba(0, 0, 0, 0);color:#4a4a4a;}#i457u:active{backgroundColor:rgb(0, 0, 0);}#isypn:hover{font-size:16px;}#itj5u{min-height:5px;display:flex;}#ij61e{min-height:5px;height:44px;display:flex;justify-content:center;align-items:center;width:47px;color:#000000;}#i1ht6{min-height:5px;}#is7jo{padding:10px 10px 0 10px;font-size:15px;font-weight:700;color:#ffffff;}#iqcgg{padding:10px;font-size:15px;font-weight:400;color:#ffffff;}#igv1f{color:#ffffff;}#ilnuz{color:#ffffff;}#ic0js{color:#ffffff;}#ipnig{color:#ffffff;}#idvg{display:none;}#i1jz2{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#i4xul{min-height:5px;}#irqdy{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#ijjjl{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:10px 10px 5px 0;}#iu0tj{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#iagrg{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#imc3t{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#iampi{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#ithuk{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#iywdq{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#iorry{backgroundColor:rgba(0, 0, 0, 0);}#i5pxo{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#i5apf{font-family:, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 10px 5px 0;}#ide0w{padding:10px 10px 10px 0;font-size:16px;font-weight:700;color:#000000;}#ilk2z{backgroundColor:rgba(0, 0, 0, 0);display:flex;justify-content:center;align-items:center;}#irit4{padding:5px 10px 5px 0;font-size:12px;justify-content:center;display:block;color:#000000;}#iaz8u{min-height:5px;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i2cy6{min-height:5px;height:25px;display:flex;justify-content:center;align-items:center;width:25px;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(100,15,15,1) 0%,rgba(100,15,15,1) 0%);}#idmzm{backgroundColor:rgb(0, 0, 0);}#iu1zf{padding:0 0 0 10px;font-size:13px;font-weight:400;backgroundColor:rgba(0, 0, 0, 0);color:#4a4a4a;}body{background-repeat:normal;}#it3a1{backgroundColor:rgba(0, 0, 0, 0);}#ic7sc{padding:10px 10px 10px 0;font-size:16px;font-weight:700;color:#000000;}#i07s6{width:139px;height:32px;margin:0 0 16px 0;}#in92r{min-height:5px;height:138px;text-align:left;display:block;}#ie09z{padding:10px 10px 10px 0;font-size:16px;font-weight:700;color:#000000;margin:10px 0 0 0;}#i3wz4{padding:10px 10px 10px 0;font-size:16px;font-weight:700;color:#000000;margin:5px 0 0 0;}#ixhnd{padding:20px 0 20px 0;}#i41mj{min-height:5px;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ipnaj{min-height:5px;height:25px;display:flex;justify-content:center;align-items:center;width:25px;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(100,15,15,1) 0%,rgba(100,15,15,1) 0%);}#ib7xx{backgroundColor:rgb(0, 0, 0);}#ixfum{padding:0 0 0 10px;font-size:13px;font-weight:400;backgroundColor:rgba(0, 0, 0, 0);color:#4a4a4a;}@media (max-width: 1023px){#ixdm{display:flex;max-width:50%;flex-grow:1;flex-basis:100%;justify-content:center;align-items:flex-start;}#irhlf{flex-direction:column;justify-content:center;align-items:center;}}@media (max-width: 768px){#i3qtu{font-size:25px;}#ixdm{max-width:100%;}#i11x{height:300px;}#ilk2z{display:flex;justify-content:center;flex-direction:column;align-items:center;}#ici3c{display:flex;flex-direction:column;justify-content:center;align-items:center;}#ixk7s{font-size:14px;}#ik81k{font-size:14px;}#iqcgg{font-size:14px;}#in9i3{font-size:14px;}#ici3c{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;justify-content:flex-start;align-items:flex-start;}#iptix{margin:0 0 0 0;}}@media (max-width: 480px){#i3qtu{font-size:22px;}}/**---CUSTOM-STYLE--**//*[[footer-link]]*/.footer-link{
+  display: block;
+  padding: 10px;
+  color: #000;
+  font-size: 13px;
+}
+.footer-link:hover{
+  text-decoration: underline;
+}
+/*[split]*//*[[vx-footer]]*/.vx-footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px!important;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.vx-footer .icon{
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #000;
+  transition: 0.5s all;
+}
+.vx-footer:hover{
+  color: #640f0f!important;
+}
+.vx-footer:hover .icon{
+  background-color: #000!important;
+}
+/*[split]*//*[[icon]]*/* { box-sizing: border-box; } body {margin: 0;}#iusc{backgroundColor:rgb(138, 103, 105);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;}#ik03{backgroundColor:rgba(0, 0, 0, 0);padding:50px 12px 50px 12px;background-repeat:normal;background-position-y:0%;background-attachment:undefined;background-blend-mode:100;}#i4z2{padding:0 0 0 0;background-blend-mode:100;background-attachment:undefined;margin:-97px 0 0 0;}#ifrr8{min-height:5px;height:5px;width:35px;background-image:linear-gradient(90deg,rgba(8,247,214,1) 0%,rgba(8,247,214,1) 0%);border-radius:10px;}#io7n9{padding:10px 10px 0 10px;font-size:40px;background-repeat:normal;backgroundColor:rgba(0, 0, 0, 0);background-position-y:0%;background-attachment:undefined;background-blend-mode:100;background-position-x:0%;text-align:right;color:#2f0a0a;font-weight:900;line-height:50px;font-family:Roboto;}#ic5o6{padding:0 0 0 0;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(231,236,234,1) 0%,rgba(231,236,234,1) 0%);background-repeat:normal;background-position-y:0%;background-blend-mode:color;background-attachment:scroll, scroll;background-size:auto, auto;}#i1o8c{padding:10px;font-size:35px;font-weight:700;background-repeat:normal;text-align:center;}#ic648{min-height:5px;height:15px;display:flex;justify-content:center;}#is9qv{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;margin:0 0 0 0;background-attachment:undefined;}#iybzl{backgroundColor:rgba(0, 0, 0, 0.6);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;}#portifolio{padding:40px 0 80px 0;background-image:linear-gradient(90deg,rgba(232,232,232,0.82) 0%,rgba(232,232,232,0.82) 0%),url(https://api.h2sistemas.com.br//assets/hafeng/library/images/sala-04-original.webp);background-position-y:53%;backgroundColor:rgba(255,255,255,0);background-attachment:undefined;background-position-x:100%;background-blend-mode:82;background-repeat:normal;background-size:cover;}#iwt5e{padding:10px 10px 10px 10px;font-size:30px;font-weight:700;background-repeat:normal;text-align:center;color:#1b2131;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-position-x:0%;background-position-y:0%;background-attachment:undefined;}#iwd41{backgroundColor:rgb(80, 209, 142);background-attachment:undefined;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#im3la{backgroundColor:rgba(0, 0, 0, 0);display:flex;flex-direction:column;justify-content:center;align-items:center;background-attachment:undefined;}#iz8tc{padding:50px 0 50px 0;backgroundColor:rgba(0, 0, 0, 0);background-repeat:normal;background-position-y:0%;background-image:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%);background-blend-mode:100;display:none;}#im37w{backgroundColor:rgba(0, 0, 0, 0);}#ibed4{backgroundColor:rgba(0, 0, 0, 0.6);}#ih7k8{backgroundColor:rgba(0, 0, 0, 0);display:flex;justify-content:center;background-attachment:undefined;align-items:flex-start;flex-wrap:wrap;background-repeat:normal;background-blend-mode:100;}#planos{padding:50px 0 50px 0;backgroundColor:rgba(0, 0, 0, 0);background-repeat:normal;background-position-y:0%;background-attachment:undefined;display:none;}#ipzn{background-repeat:normal;}##portifolio{backgroundColor:rgb(138, 103, 105);background-attachment:undefined;}#i1bbt{background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);display:flex;justify-content:center;}#ievy6{background-attachment:undefined;}#galeria{background-attachment:undefined;}#i9hrf{background-attachment:undefined;}#ixqub{background-attachment:undefined;}#ijlf{backgroundColor:rgb(138, 103, 105);background-attachment:undefined;}#ifxjl{padding:10px;font-size:35px;margin:0 0 0 0;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;border-color:#4a4a4a;font-family:Roboto;color:#ffffff;text-align:center;font-weight:900;}#iff1n{background-attachment:undefined;}#i8lqq{min-height:5px;background-attachment:undefined;height:44px;backgroundColor:rgba(0, 0, 0, 0);text-align:center;margin:16px 0 0 0;}#iz9hk{background-attachment:undefined;display:flex;align-items:center;justify-content:space-around;}#iyo5i{background-attachment:undefined;}#ipr1p{background-attachment:undefined;}#i7wjg{padding:120px 0 120px 0;backgroundColor:rgba(0, 0, 0, 0);background-image:linear-gradient(90deg,rgba(100,15,15,-0.01) 0%,rgba(100,15,15,-0.01) 0%),url(https://api.h2sistemas.com.br//assets/hafeng/library/images/sala-04-original.webp);background-position-y:68%;background-blend-mode:100;background-position-x:0%;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;}#inuy{background-attachment:undefined;}#ig2w{background-attachment:undefined;}#iafco{backgroundColor:rgb(80, 209, 142);background-attachment:undefined;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ijeck{background-attachment:undefined;background-image:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%);margin:0 10px 0 0;background-repeat:normal;background-position-y:0%;}#ilrwh{min-height:5px;background-attachment:undefined;height:169px;background-image:url(https://api.h2sistemas.com.br//assets/hafeng/library/images/07-original.webp);background-repeat:normal;background-size:cover;background-position-y:60%;}#i1x6o{padding:10px 10px 10px 10px;font-size:20px;margin:0 0 0;font-weight:700;color:#1b2131;background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);min-height:80px;text-align:center;display:flex;justify-content:center;align-items:center;}#iai7p{padding:10px;font-size:15px;margin:10px 0 0 0;font-weight:300;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;text-align:left;}#imvk8{min-height:1px;background-attachment:undefined;margin:10px 0 0 0;background-image:linear-gradient(90deg,rgba(225,223,223,1) 0%,rgba(225,223,223,1) 0%);}#ixtw9{padding:80px 0 80px 0;background-image:linear-gradient(90deg,rgba(17,3,3,0.76) 0%,rgba(17,3,3,0.76) 0%),url(https://api.h2sistemas.com.br//assets/hafeng/library/images/04-fachada-original.webp);background-size:cover;background-position-y:49%;backgroundColor:rgba(255,255,255,0);background-blend-mode:76;background-position-x:59%;background-repeat:normal;background-attachment:fixed;}#ie2w5{backgroundColor:rgba(0, 0, 0, 0);display:flex;flex-direction:column;justify-content:center;align-items:center;background-attachment:undefined;font-weight:100;}#ien64{padding:10px 10px 0 10px;font-size:30px;font-weight:700;background-repeat:normal;text-align:center;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-position-y:0%;background-attachment:undefined;background-blend-mode:100;}#it299{min-height:5px;background-attachment:undefined;height:44px;backgroundColor:rgba(0, 0, 0, 0);text-align:center;margin:16px 0 0 0;}#i91lg{backgroundColor:rgb(80, 209, 142);background-attachment:undefined;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;font-size:14px;margin:21px 0 0 0;}#idc8p{padding:10px 10px 0 10px;font-size:20px;background-repeat:normal;text-align:center;backgroundColor:rgba(0, 0, 0, 0);background-position-y:0%;background-attachment:undefined;background-blend-mode:100;font-weight:100;background-position-x:0%;color:#040202;}#is4nd{backgroundColor:rgba(0, 0, 0, 0);background-attachment:undefined;display:flex;}#iiov5{background-attachment:undefined;}#ina36{background-attachment:undefined;}#iecem{backgroundColor:rgba(0, 0, 0, 0);background-attachment:undefined;}#ibm65{background-attachment:undefined;margin:0 0 0 10px;}#ib5i8{padding:10px;background-attachment:undefined;margin:7px 0 0 0;font-size:18px;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ixc74{padding:10px;background-attachment:undefined;margin:7px 0 0 0;font-weight:300;}#iks5w{backgroundColor:rgb(80, 209, 142);background-attachment:undefined;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i5eub{padding:10px 10px 0 10px;font-size:20px;background-repeat:normal;text-align:center;color:#ffffff;backgroundColor:rgba(0, 0, 0, 0);background-position-y:0%;background-attachment:undefined;background-blend-mode:100;font-weight:100;background-position-x:0%;}#ivrpu{background-attachment:undefined;}#iil1i{background-attachment:undefined;}#iqqh3{background-attachment:undefined;}#i8aj4{backgroundColor:rgba(0, 0, 0, 0);display:flex;justify-content:center;background-attachment:undefined;align-items:flex-start;flex-wrap:wrap;background-repeat:normal;background-blend-mode:100;background-position-x:0%;background-position-y:0%;}#ie00f{min-height:5px;background-attachment:undefined;width:30%;}#ijkt2{min-height:5px;background-attachment:undefined;width:60%;}#i82zh{padding:10px;background-attachment:undefined;font-size:13px;}#irg7i{padding:10px;background-attachment:undefined;font-weight:700;}#i142g{padding:10px;background-attachment:undefined;font-weight:700;}#irg7i2{padding:10px;background-attachment:undefined;font-weight:700;}#irg7i1{padding:10px;background-attachment:undefined;font-weight:700;}#ip0il{padding:10px;background-attachment:undefined;font-weight:700;}#il7n6{padding:10px;background-attachment:undefined;font-size:13px;}#ipvvar{padding:10px 10px 0 10px;font-size:30px;background-repeat:normal;text-align:center;color:#640f0fff;backgroundColor:rgba(0, 0, 0, 0);background-position-y:0%;background-attachment:undefined;background-blend-mode:100;background-position-x:0%;font-family:Roboto;font-weight:400;}#iipzdx{background-attachment:undefined;position:relative;padding:12px 12px 12px 12px;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;display:flex;justify-content:center;align-items:center;}#i5pzsu{background-attachment:undefined;padding:12px 12px 12px 12px;}#icrwin{min-height:5px;background-attachment:undefined;position:absolute;right:1px;height:70%;width:2px;top:50%;background-image:linear-gradient(90deg,rgba(100,15,15,1) 0%,rgba(100,15,15,1) 0%);margin:0 0 0;transform:rotateX(0) rotateY(0) rotateZ(0) scaleX(1) scaleY(1) scaleZ(1) translateX(0) translateY(-50%) translateZ(0);}#iklodi{padding:0 0 0 0;background-attachment:undefined;color:#2f0a0a;font-family:Roboto;font-weight:200;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#i770so{background-attachment:undefined;}#ib2p5{background-attachment:undefined;}##sobre-nos{background-attachment:undefined;padding:50px 0 50px 0;backgroundColor:rgba(0, 0, 0, 0);}#i4u4k{background-repeat:normal;background-attachment:undefined;}#ihce69{padding:10px;background-attachment:undefined;font-weight:700;backgroundColor:rgb(100, 15, 15);margin:-40px 0 0 0;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#iqtho{background-attachment:undefined;}#i9bnqk{background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);}#ivjrst{background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);}#if6fi{backgroundColor:rgba(0, 0, 0, 0.6);background-attachment:undefined;background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}#ivf4rg{background-attachment:undefined;background-image:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%);margin:0 10px 0 0;background-repeat:normal;background-position-y:0%;}#itrt3h{min-height:5px;background-attachment:undefined;height:169px;background-image:url(https://api.h2sistemas.com.br//assets/hafeng/library/images/08-original.webp);background-repeat:normal;background-size:cover;background-position-y:60%;}#inovbg{padding:10px 10px 10px 10px;font-size:20px;margin:0 0 0;font-weight:700;color:#1b2131;background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);min-height:80px;text-align:center;display:flex;justify-content:center;align-items:center;}#iuaaot{min-height:1px;background-attachment:undefined;margin:10px 0 0 0;background-image:linear-gradient(90deg,rgba(225,223,223,1) 0%,rgba(225,223,223,1) 0%);}#iypsek{padding:10px;font-size:15px;margin:10px 0 0 0;font-weight:300;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;text-align:left;}#indki5{background-attachment:undefined;background-image:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 0%);margin:0 10px 0 0;background-repeat:normal;background-position-y:0%;}#ie01w6{min-height:5px;background-attachment:undefined;height:169px;background-image:url(https://api.h2sistemas.com.br//assets/hafeng/library/images/09-original.webp);background-repeat:normal;background-size:cover;background-position-y:60%;}#immz2k{padding:10px 10px 10px 10px;font-size:20px;margin:0 0 0;font-weight:700;color:#1b2131;background-attachment:undefined;backgroundColor:rgba(0, 0, 0, 0);min-height:80px;text-align:center;display:flex;justify-content:center;align-items:center;background-repeat:normal;background-position-y:0%;}#i18iem{min-height:1px;background-attachment:undefined;margin:10px 0 0 0;background-image:linear-gradient(90deg,rgba(225,223,223,1) 0%,rgba(225,223,223,1) 0%);}#ijlyvc{padding:10px;font-size:15px;margin:10px 0 0 0;font-weight:300;backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;background-attachment:undefined;text-align:left;}#i4gp7n{min-height:5px;background-attachment:undefined;height:294px;}#ixgj1a{min-height:5px;background-attachment:undefined;height:294px;}#iglvlv{padding:10px;background-attachment:undefined;font-weight:700;}#ia86tj{padding:10px;background-attachment:undefined;font-size:13px;}#ik1j8s{padding:10px;background-attachment:undefined;font-size:13px;}#iup7dg{min-height:5px;background-attachment:undefined;height:294px;}#izssus{padding:10px;background-attachment:undefined;font-weight:700;}#ivkqxg{padding:10px;background-attachment:undefined;font-size:13px;}#inoqx7{padding:10px;background-attachment:undefined;font-size:13px;}#ixc63c{min-height:5px;background-attachment:undefined;height:294px;}#iy4d8d{padding:10px;background-attachment:undefined;font-weight:700;}#i35pi6{padding:10px;background-attachment:undefined;font-size:13px;}#ibny0e{padding:10px;background-attachment:undefined;font-size:13px;}#sobre-nos{background-attachment:undefined;padding:50px 0 50px 0;}body{background-attachment:undefined;}#servicos{background-attachment:undefined;padding:50px 0 50px 0;}#ia3d72{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;}@media (max-width: 1023px){#inuy{flex-direction:column;}#ic5o6{background-attachment:scroll, scroll;background-size:auto, auto;}#is9qv{background-attachment:undefined;flex-wrap:wrap;}#ih7k8{background-attachment:undefined;flex-wrap:wrap;}}@media (max-width: 768px){#is9qv{background-attachment:undefined;}#iwd41{backgroundColor:rgba(12, 196, 175, 0.663);background-attachment:undefined;}#io7n9{backgroundColor:rgba(0, 0, 0, 0);background-attachment:undefined;font-size:22px;}#iwt5e{background-attachment:undefined;font-size:25px;}#is9qv{background-attachment:undefined;}#iz9hk{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;flex-direction:column;}#is4nd{flex-direction:column;justify-content:center;align-items:center;}#i4gp7n{width:100%;max-width:100%;}#ie00f{width:100%;margin:0 0 22px 0;}#ijkt2{width:100%;}#ixc63c{border-style:solid;border-right-width:0;border-bottom-width:0;border-left-width:0;border-top-width:1px;}#ifxjl{backgroundColor:rgba(0, 0, 0, 0);background-blend-mode:100;background-repeat:normal;background-position-x:0%;background-position-y:0%;font-size:26px;}}@media (max-width: 480px){#io7n9{background-attachment:undefined;font-size:18px;}#ik03{background-attachment:undefined;}#servicos{background-attachment:undefined;}#ihce69{backgroundColor:rgb(100, 15, 15);background-attachment:undefined;text-align:center;}#ifxjl{font-size:24px;}#ipvvar{font-size:18px;}#ien64{font-size:18px;}#ihce69{backgroundColor:rgb(100, 15, 15);font-size:14px;}#iks5w{backgroundColor:rgb(0, 0, 0);font-size:14px;}#iafco{backgroundColor:rgb(15, 2, 2);font-size:14px;}}/**---CUSTOM-STYLE--**//*[[btn]]*/.btn{
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  white-space: nowrap;
+  text-transform: capitalize;
+  outline: none !important;
+  padding: 15px 40px;
+  font-size: 16px;
+  line-height: 1.7;
+  border-radius: 5px;
+  font-family: Montserrat,sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*[split]*//*[[btn-primary]]*/.btn-primary{
+  color: #fff;
+  background-color: #640f0f;
+  border-color: #640f0f;
+  transition: 0.5s all;
+}
+.btn-primary:hover{
+  background-color: #000;
+  color: #FFF;
+}
+/*[split]*//*[[fetaures]]*/.fetaures{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fetaures .fbox{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  color: #FFF;
+}
+.fetaures .fbox:nth-child(odd){
+  background-color: #640f0f11;
+}
+@media screen and (max-width: 768px){
+  .fetaures .fbox{
+    width: 90%;
+  }
+}
+.fetaures .fbox .fbox-side1{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  transition: 0.5s all;
+}
+.fetaures .fbox .s{
+  opacity: 1;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center
+}
+.fetaures .fbox .s i {
+  color:  #640f0f!important;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.fetaures .fbox .s h3 {
+  color:  #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.fetaures .fbox:hover .s{
+  opacity: 0;
+  height: 5px;
+  overflow: hidden;
+}
+.fetaures .fbox .description{
+  opacity: 0;
+  height: 5px;
+  overflow: hidden;
+  transition: 0.5s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center
+}
+.fetaures .fbox:hover .description{
+  opacity: 1;
+  height: 100%;
+  overflow: hidden;
+}
+.fetaures .fbox:hover .fbox-side1{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 105%;
+  width: 100%;
+  opacity: 1;
+  background: #640f0f;
+  color: #FFF;
+  padding: 10px;
+}
+/*[split]*//*[[depos]]*/.depos .cont{
+  display: flex;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  padding: 25px 0;
+}
+.depos .sz1{
+  font-size: 55px;
+  color: #50D18E;
+  padding: 5px;
+}
+.depos .sz2{
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  min-width: 40%;
+}
+.depos .sz2 img{
+  margin: 10px;
+}
+.depos .sz2 .name{
+  font-weight: bold;
+}
+.depos .sz2 .function{
+  font-weight: 400;
+}
+.depos .sz3{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+/*[split]*//*[[plan]]*/.ug-lightbox{
+  display: none;
+}
+.plan{
+  width: 300px;
+  margin: 10px;
+  border: 2px solid #eee;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s all;
+}
+.plan:hover{
+  box-shadow: 0px 0px 10px #00000055;
+  margin-top: -5px;
+}
+.plan .table-features{
+  margin: 15px;
+  margin-top: 22px;
+}
+.plan .featured{
+  color: #000;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: #08F7D6;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: montserrat;
+}
+.plan td{
+  padding: 5px;
+  font-size: 14px;
+}
+.plan i{
+  color: #999
+}
+.plan .title-box{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  justify-content:center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+  padding: 15px;
+  font-family: montserrat;
+}
+.plan .plan-name{
+  font-weight: bold;
+  font-size: 19px;
+}
+.plan .plan-price{
+  display: flex;
+  position: relative
+}
+.plan .price-symbol{
+  font-size: 18px;
+  top: 20px;
+  position: relative;
+  margin-right: 5px;
+  font-family: montserrat;
+  font-weight: bold;
+}
+.plan .price{
+  font-size: 70px;
+  font-weight: bold;
+  color: #08F7D6;
+  font-family: montserrat;
+}
+.plan .price-bef{
+  top: 2px;
+  font-family: montserrat;
+  font-weight: bold;
+  position: absolute;
+}
+.plan .price-after{
+  font-size: 18px;
+  position: relative;
+  top: 60px;
+  font-family: montserrat;
+  font-weight: bold;
+}
+.plan .join-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 2px solid #BBB;
+}
+.plan p {
+  font-size: 13px;
+  padding: 15px;
+  text-align: center;
+}
+/*[split]*//*[[b-link]]*/.b-link{
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-left: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+.b-link.visible, .b-link:hover{
+  border-left: 8px solid #640f0f;
+  color: #640f0f;
+}
+/*[split]*//*[[content-text]]*/.content-text p{
+  padding-bottom: 10px;
+}
+/*[split]*//*[[title-page]]*/.title-page{
+  border: 2px solid #640f0f;
+  background: #640f0f;
+  color: #eee;
+  padding: 12px 25px!important;
+}
+/*[split]*//*[[sld1]]*/.sld1{
+}
+.sld1 .splide__track{
+  max-width: 800px;
+}
+.sld1 .home-slide{
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+}
+.sld1 .home-slide .container{
+  height: 100%;
+}
+.sld1 .home-slide .container .columns{
+  height: 100%;
+}
+.sld1 .home-slide .column{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sld1 .btn-cta{
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.sld1 h3{
+  margin-top: -20px;
+  font-size: 2.5em;
+  color: #000;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: left;
+}
+.sld1 div small{
+  text-align: left;
+  font-size: 15px;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: block;
+}
+@media screen and (max-width: 768px){
+  .splide__arrows{
+    display: none
+  }
+  .sld1 .home-slide .column{
+    padding: 12px 20px;
+  }
+  .sld1 h3{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  .sld1 h4{
+    font-size: 1.2em;
+  }
+}
+/*[split]*//*[[splide]]*//*[split]*//*[[sld2]]*/.sld2{
+}
+.sld2 .splide__track{
+  max-width: 1124px;
+}
+.sld2 .home-slide{
+  border-radius: 5px;
+  height: 260px;
+  width: 230px;
+  margin: auto;
+  background-color: #640f0f;
+  transition: 0;
+  5s all;
+}
+.sld2 .home-slide:hover{
+  box-shadow: 0px 0px 2px #640f0f;
+}
+.sld2 .im {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.sld2 .cont-im{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background-color: #640f0f55;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+.sld2 .home-slide:hover .cont-im{
+  opacity: 1;
+  pointer-events: inherit;
+}
+.sld2 .cont-im h4{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF;
+}
+.sld2 .cont-im h5{
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+}
+.sld2 .home-slide .container{
+  height: 100%;
+}
+.sld2 .home-slide .container .columns{
+  height: 100%;
+}
+.sld2 .home-slide .column{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sld2 .btn-cta{
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.sld2 h3{
+  margin-top: -20px;
+  font-size: 2.5em;
+  color: #000;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: left;
+}
+.sld2 div small{
+  text-align: left;
+  font-size: 15px;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 10px;
+  display: block;
+}
+@media screen and (max-width: 768px){
+  .splide__arrows{
+    display: none
+  }
+  .sld2 .home-slide .column{
+    padding: 12px 20px;
+  }
+  .sld2 h3{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  .sld2 h4{
+    font-size: 1.2em;
+  }
+}
+/*[split]*//*[[content-cons]]*/.content-cons{
+  display: none
+}
+
+.content-cons.visible{
+  display: inherit
+}
+ </style>
+  <style id='st-menu-style'>   </style>
+  <style id='st-footer-style'>  </style>
+  <style>
+    body{
+      display: block!important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/css/fontawesome.min.css"/>
+  <script src="//unpkg.com/vanilla-masker@1.1.1/lib/vanilla-masker.js"></script>
+  <script src="/js/plugins/aes.min.js"></script>
+  <script src="/js/js.cookie.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
+
+  <script src="/js/underscore-min.js"></script>
+  <script src="/js/app.js?timestamp=55445589"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <script></script>
+  <script></script>
+  <script></script>
+  <script>var items = document.querySelectorAll('#i0udw');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){this.onclick = function(){
+ window.open("https://pt-br.facebook.com/hafengenharia/","_blank");
+}}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#i9sxf');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){this.onclick = function(){
+	window.open("https://www.instagram.com/haf_engenharia/","_blank");
+}
+}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#i41mj');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){this.onclick = function(){
+	window.open("https://br.pinterest.com/haf_engenharia/","_blank");
+}
+}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#iaz8u');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){this.onclick = function(){
+	window.open("https://api.whatsapp.com/send?phone=551131361858&text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es","_blank");
+}
+}.bind(items[i]))();
+        }var items = document.querySelectorAll('#i1o7');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){new Splide(this, {autoplay: true, type:'loop'}).mount();
+}.bind(items[i]))();
+        }var items = document.querySelectorAll('#iqkt');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){/*const e = this;
+window.addEventListener('scroll', function(){
+	if(window.innerWidth > 640){
+		if(window.scrollY > 100){
+			e.classList.add("small")
+		}
+		else{
+			e.classList.remove("small")
+		}
+	}
+}
+											 )*/}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#iz7f');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){this.onclick = () => window.open("/","_self");}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#itlk');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){
+              $(document).ready(function() {
+
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+              });
+          });}.bind(items[i]))();
+        }var items = document.querySelectorAll('#i9bnqk');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){const splide = new Splide( this, {
+	perPage: 4,
+	padding: "5%",
+	type   : 'loop',
+}
+												 );
+splide.mount();
+}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#ijkt2');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){const setT = function(name) {
+	const a = document.querySelector('.c_'+name);
+	const b = document.querySelector('.c1_'+name);
+	if(a && b){
+		a.classList.add("visible");
+		b.classList.add("visible");
+	}
+}
+const removeT = function() {
+	const a = document.querySelectorAll('.b-link');
+	const b = document.querySelectorAll('.content-cons');
+	if(a && b){
+		a.forEach(a => a.classList.remove("visible"));
+		b.forEach(b => b.classList.remove("visible"));
+	}
+}
+removeT();
+setT('consultoria');
+const items = document.querySelectorAll('.b-link');
+const content = this;
+items.forEach(function(i){
+	i.onclick= function(x){
+		removeT();
+		setT(i.getAttribute("op"));
+	}
+}
+						 );
+}.bind(items[i]))();
+        }
+        var items = document.querySelectorAll('#ivjrst');
+        for (var i = 0, len = items.length; i < len; i++) {
+          (function(){const splide = new Splide( this, {
+	perPage: 3,
+	arrows: false,
+	gap: "5px",
+	autoplay: true,
+	pagination: false,
+	type   : 'loop',
+}
+												 );
+splide.mount();
+}.bind(items[i]))();
+        }</script>
+
+  <iframe hidden height="0" width="0" src="/phoenix/live_reload/frame"></iframe></body>
+</html>
