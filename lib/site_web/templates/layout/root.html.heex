@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="csrf-token" content={csrf_token_value()}>
-    <%= live_title_tag assigns[:page_title] || "Hafeng", suffix: "Engenharia" %>
-    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
-    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- COMMON TAGS -->
+        <meta charset="utf-8">
+        <!-- Search Engine -->
+        <meta name="description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+        <meta name="image" content="">
+        <meta name="name" content="Habitação | HAF Engenharia">
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Habitação | HAF Engenharia">
+        <meta itemprop="description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+        <meta itemprop="image" content="">
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="Habitação | HAF Engenharia">
+        <meta name="og:description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+        <meta name="og:url" content="https://habitacao.hafeng.com.br">
+        <meta name="og:site_name" content="Habitação | HAF Engenharia">
+        <meta name="og:locale" content="pt_BR">
+        <meta name="og:type" content="website">
+        <meta name="og:image" content="">
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="628"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:image:width" content="200"/>
+        <meta property="og:image:height" content="200"/>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://habitacao.hafeng.com.br">
+        <meta property="twitter:title" content="Habitação | HAF Engenharia">
+        <meta property="twitter:description" content="HAF Engenharia oferece um serviço rápido e confiável ​​​​​​​para sua construção ou reforma.
+">
+        <meta property="twitter:image" content="">
+        <link rel="icon" type="image/webp" href="https://api./assets/hafeng/library/images/logo-1-original.webp"/>
+
+        <title>HAF Engenharia</title>
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" as="style">
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" as="style">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+		<link rel="stylesheet" href="/assets/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-uw5RW5o5/R5ex5AMQ/4g3qjOk98JlD8F1zE5S5Gx+OoxOJ5Sp5Im5elOz+0gquEiU0nsXcxBJ+U6mFpe6BQ2wQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   </head>
   <body>
     <%= @inner_content %>
